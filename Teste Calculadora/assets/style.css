@@ -1,0 +1,75 @@
+body{
+    background-color: aqua;
+    font: normal 15pt arial;
+}
+
+h1{
+    text-shadow: 2px 2px 5px red;
+    text-align: center;
+}    
+
+div#Calculos{
+    margin-left: 400px;
+}
+
+p{
+    font-family: Verdana;
+    border-bottom: solid red;
+}
+
+div#resultadosoma{
+    text-align: left;
+}
+
+div#resultadosub{
+    text-align: left;
+}
+
+div#resultadomult{
+    text-align: left;
+}
+
+div#resultadodiv{
+    text-align: left;
+}
+
+div#borda{
+    background-color: rgb(82, 139, 172);
+    font: normal 20pt arial;
+    margin-bottom: 50px;
+    border: dashed;
+    border-width: 3px;
+    width: 550px;
+    text-align: center;
+}
+
+input{
+    margin-top: 5px;
+    width: 100px;
+}
+input#butsoma{
+    font-style: italic;
+    margin-top: 5px;
+    width: 100px;
+    background-color: green;
+}
+input#butsub{
+    font-style: italic;
+    margin-top: 5px;
+    width: 100px;
+    background-color: red;
+}
+
+input#butmult{
+    font-style: italic;
+    margin-top: 5px;
+    width: 100px;
+    background-color: blue;
+}
+
+input#butdiv{
+    font-style: italic;
+    margin-top: 5px;
+    width: 100px;
+    background-color:crimson;
+}

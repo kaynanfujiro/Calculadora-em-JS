@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="assets/style.css"/>
+    <link rel="icon" href="Fotos/ic_calculadora-roxo.png">
+</head>
+<body>
+    <h1>Calculadoras Basica</h1>
+    <div id="Calculos">
+        <div id="borda">
+            <p>Calculadora de Soma</p>
+            <input type="number" name="txtsom1" id="txtsom1">
+            <input type="number" name="txtsom2 "id="txtsom2">
+            <input id="butsoma" type="button" value="Somar" onclick="somar()">
+            <div id="resultadosoma">Resultado:</div>
+        </div>
+        
+        <div id="borda">
+            <p>Calculadora de Subtração</p>
+            <input type="number" name="txtsub1" id="txtsub1">
+            <input type="number" name="txtsub2" id="txtsub2">
+            <input id="butsub" type="button" value="Subtrair" onclick="sub()">
+            <div id="resultadosub">Resultado:</div>
+        </div>
+
+        <div id="borda">
+            <p>Calculadora de Multiplicação</p>
+            <input type="number" name="txtmult1" id="txtmult1">
+            <input type="number" name="txtmult2" id="txtmult2">
+            <input id="butmult" type="button" value="Multiplicar" onclick="mult()">
+            <div id="resultadomult">Resultado:</div>
+        </div>
+
+        <div id="borda">
+            <p>Calculadora de Divisão</p>
+            <input type="number" name="txtdiv1" id="txtdiv1">
+            <input type="number" name="txtdiv2" id="txtdiv2">
+            <input id="butdiv" type="button" value="Dividir" onclick="div()">
+            <div id="resultadodiv">Resultado:</div>
+        </div>
+    </div>
+
+    <script>
+        
+        function somar(){
+            var tn1soma = document.getElementById('txtsom1')
+            var tn2soma = document.getElementById('txtsom2')
+            var ressoma = document.getElementById('resultadosoma')
+            var n1soma = Number(tn1soma.value)
+            var n2soma = Number(tn2soma.value)
+            var soma = n1soma + n2soma
+            ressoma.innerHTML = `A soma entre ${n1soma} e ${n2soma} é igual a <strong>${soma}</strong>`
+        }
+
+        function sub(){
+            var tn1sub = document.getElementById('txtsub1')
+            var tn2sub = document.getElementById('txtsub2')
+            var ressub = document.getElementById('resultadosub')
+            var n1sub = Number(tn1sub.value)
+            var n2sub = Number(tn2sub.value)
+            var subtracao = n1sub-n2sub
+            ressub.innerHTML = `A subtração entre ${n1sub} e ${n2sub} é igual a <strong>${subtracao}</strong>`
+
+        }
+        
+        function mult(){
+            var tn1mult = document.getElementById('txtmult1')
+            var tn2mult = document.getElementById('txtmult2')
+            var resmult = document.getElementById('resultadomult')
+            var n1mult = Number(tn1mult.value)
+            var n2mult = Number(tn2mult.value)
+            var multiplicar = n1mult*n2mult
+            resmult.innerHTML = `A Multiplicação entre ${n1mult} e ${n2mult} é igual a <strong>${multiplicar}</strong>`
+
+        }
+        function div(){
+            var tn1div = document.getElementById('txtdiv1')
+            var tn2div = document.getElementById('txtdiv2')
+            var resdiv = document.getElementById('resultadodiv')
+            var n1div = Number(tn1div.value)
+            var n2div = Number(tn2div.value)
+            var dividir = n1div/n2div
+            resdiv.innerHTML = `A Divisão entre ${n1div} e ${n2div} é igual a <strong>${dividir}</strong>`
+
+        }
+    </script>
+    
+</body>
+</html>
